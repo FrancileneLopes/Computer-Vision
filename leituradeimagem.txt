@@ -1,0 +1,31 @@
+Aula 001 - OpenCv - Leitura de imagem
+
+Primeiro, é necessário baixar o opencv na máquina
+Dentro do ambiente: 
+
+-Criamos um arquivo com a extensão .py
+
+- Importamos o OpenCV,  com o comando: 
+	import cv2
+
+- Fazemos a leitura de uma imagem com o método:
+	cv2.imread('caminho da imagem aqui')
+
+- Este método retornará uma imagem. Por isso, devemos guardar
+esse método em uma variável. Ficando assim:
+	variável = cv2.imread('caminho da imagem aqui')
+
+Obtendo informações da imagem:
+
+- Imprimimos a imagem com o comando: 
+	print (img)
+
+-O comando : 
+	print (img.shape)
+irá mostrar altura, largura e quantidade de canais
+
+- Mostrar na tela:
+	cv2.imshow('Nome da janela', imagem)
+	cv2.waitKey(0) #espera pressionar qualquer tecla
+	cv2.destroyAllWindows( ) #destrói as janelas abertas
+
